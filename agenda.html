@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agenda.css">
+    <link rel="icon" type="image/png" href="img/navicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="logo_header" src="img/logo_calendar.svg" alt="Retour sur la page principal">
+        <h1> Vendredi 15 Octobre</h1>
+    </header>
+    <main>
+
+        <article id="agenda">
+            <section id="utilitaire">
+                <a id="add" href="formulaire.html"><i class="fa-solid fa-plus"></i>
+                 <div class="infobulle"><span>Ajouter une activiter</span></div></a>
+                <a id="full" href="#affichage"><i class="fa-solid fa-border-all"></i>
+                    <div class="infobulle"><span>Afficher les 24 heures</span></div></a>
+                <a id="moon" href="#nuit"><i class="fa-solid fa-moon"></i>
+                    <div class="infobulle"><span>Afficher activités nocturnes</span></div></a>
+                <a id="a_day" href="#jour"><i class="fa-solid fa-calendar"></i>
+                    <div class="infobulle"><span>Afficher les journées</span></div></a>
+                <a id="beer" href="#afterwork"><i class="fa-solid fa-beer-mug-empty"></i>
+                    <div class="infobulle"><span>Afficher les soirées</span></div></a>
+                <i id="cesure" class="fa-solid fa-grip-lines"></i>
+                <a id="travail" href=""><i class="fa-solid fa-tag"></i>
+                    <div class="infobulle"><span>Tag #Travail</span></div></a>
+                <a id="famille" href=""><i class="fa-solid fa-tag"></i>
+                    <div class="infobulle"><span>Tag #Famille</span></div></a>
+                <a id="patrie" href=""><i class="fa-solid fa-tag"></i>
+                    <div class="infobulle"><span>Tag #Patrie</span></div></a>
+                <i id="cesure" class="fa-solid fa-grip-lines"></i>
+                <a id="important" href=""><i class="fa-solid fa-circle-exclamation"></i>
+                    <div class="infobulle"><span>Activer/Désactiver les notifications</span></div></a>
+                <a id="ratio" href="#exemple1"><i class="fa-solid fa-chart-pie"></i>
+                    <div class="infobulle"><span>Rapport d'utilisation</span></div></a>
+                    
+            
+            </section>
+
+            <section id="affichage">
+                <section id="nav_jour">
+                    <section class="jour_name"><h2 class="t_name_day">Lun. 11</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day">Mar. 12</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day">Mer. 13</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day">Jeu. 14</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day" id="jour_j">Ven. 15</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day">Sam. 16</h2></section>
+                    <section class="jour_name"><h2 class="t_name_day">Dim. 17</h2></section>
+                </section>
+            <div id="horaire">
+                <section id="nuit">
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day" id="vendredi_N">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                            <section class="day">
+                                <a href="" class="heures"><p class="time">1h</p></a>
+                                <a href="" class="heures"><p class="time">2h</p></a>
+                                <a href="" class="heures"><p class="time">3h</p></a>
+                                <a href="" class="heures"><p class="time">4h</p></a>
+                                <a href="" class="heures"><p class="time">5h</p></a>
+                                <a href="" class="heures"><p class="time">6h</p></a>
+                                <a href="" class="heures"><p class="time">7h</p></a>
+                            </section>
+                        </section>
+                <section id="jour">
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">10h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">11h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">12h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">13h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">14h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">15h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">16h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">10h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">11h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">12h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">13h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">14h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">15h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">16h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="c_travail" id="deadline" href="#exemple2">
+                            <div class="Contner_checked" id="heure_1">
+                                <div class="Checked-tittle">
+                                    <p class="time">10h</p>
+                                    <ul>
+                                        <h4>DEADLINE #6</h4>
+                                        <hR>
+                                    </ul>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <div class="Cp_checked">
+                                    <p class="p_checked">Rendre la version 6 du powerpoint pour le call de Régis</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="heures" href="formulaire.html"><p class="time">11h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">12h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">13h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">14h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">15h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">16h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">10h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">11h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">12h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">13h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">14h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">15h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">16h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day" id="vendredi_D">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">10h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">11h</p></a>
+                        <a class="c_travail" id="meeting" href="#exemple3">
+                            <div class="Contner_checked" id="heure_1">
+                                <div class="Checked-tittle">
+                                    <p class="time">12h</p>
+                                    <ul>
+                                        <h4>MEETING</h4>
+                                        <hR>
+                                    </ul>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <div class="Cp_checked">
+                                    <p class="p_checked">Sujet : peut-on toujours faire les meeting au BuffaloGrill alors que Sandrine est Vegan ?</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="heures" href="formulaire.html"><p class="time">15h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">16h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">8h</P></a>
+                        <a class="heures" href="formulaire.html"><p class="time">9h</P></a>
+                        <a class="c_famille" id="fleuriste" href="#exemple4">
+                            <div class="Contner_checked" id="heure_1">
+                                <div class="Checked-tittle">
+                                    <p class="time">10h</p>
+                                    <ul>
+                                        <h4>Fleuriste</h4>
+                                        <hR>
+                                    </ul>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <div class="Cp_checked">
+                                    <p class="p_checked">Passer chez le fleuriste pour acheter un bouquet à Mamie</p>
+                                </div>
+                            </div>
+                        </a>
+                            <a class="c_famille"id="annif" href="#exemple5">
+                                <div class="Contner_checked">
+                                    <div class="Checked-tittle">
+                                        <p class="time">11h</p>
+                                        <ul>
+                                            <h4>Anniversaire Mamie</h4>
+                                            <hR>
+                                        </ul>
+                                        <i class="fa-solid fa-circle-exclamation"></i>
+                                    </div>
+                                    <div class="Cp_checked" id="Cp_1h">
+                                        <p class="p_checked">Manger avec mamie pour son 70ième anniversaire. Ne pas oublier les bougies et les petits-fours- si je continue a ecrir pour voir ce que ça fait.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        <a class="heures" href="formulaire.html"><p class="time">17h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">18h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">19h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><t class="time">8h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">9h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">10h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">11h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">12h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">13h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">14h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">15h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">16h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">17h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">18h</t></a>
+                        <a class="heures" href="formulaire.html"><t class="time">19h</t></a>
+                    </section>
+                </section>
+                <section id="afterwork">
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day" id="vendredi_A">
+                        <a class="c_patrie" id="soiree"href="#exemple6">
+                            <div class="Contner_checked" id="heure_1">
+                                <div class="Checked-tittle">
+                                    <p class="time">20h</p>
+                                    <ul>
+                                        <h4>Soirée contrée-pétanque</h4>
+                                        <hR>
+                                    </ul>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <div class="Cp_checked">
+                                    <p class="p_checked">Pétanque et Ricard pour commencer et jeux de carte/wisky pour la fin</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                    <section class="day">
+                        <a class="heures" href="formulaire.html"><p class="time">20h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">21h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">22h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">23h</p></a>
+                        <a class="heures" href="formulaire.html"><p class="time">24h</p></a>
+                    </section>
+                </section>
+            </section>
+        </div>
+        </article>
+    </main>
+    <div class="lightbox" id="exemple1">
+                        <div class="page_target">
+                          <a href="#" class="closemsg"></a>
+                          <div class="mep_page">
+                              <div>
+                                    <h2>Utilisation des tags</h2>
+                                    <div class="info_tag">
+                                        <div class="round" id="round_travail"></div>
+                                        <h3># Travail</h3>
+                                    </div>
+                                    <div class="barre_tag">
+                                            <h3>26</h3>
+                                            <div id="barre_travail"></div>
+                                    </div>
+                            </div>
+                                <div class="info_tag">
+                                    <div class="round" id="round_famille"></div>
+                                    <h3># Famille</h3>
+                                </div>
+                                <div class="barre_tag">
+                                        <h3>28</h3>
+                                        <div id="barre_famille"></div>
+                                </div>
+                                <div class="info_tag">
+                                    <div class="round" id="round_patrie"></div>
+                                    <h3># Patrie</h3>
+                                </div>
+                                <div class="barre_tag">
+                                        <h3>12</h3>
+                                        <div id="barre_patrie"></div>
+                                </div>
+                        </div>
+                      </div>
+    </div>
+
+    <div class="lightbox" id="exemple2">
+                        <div class="page_target">
+                          <a href="#" class="closemsg"></a>
+                          <div class="mep_page">
+                              <div>
+                                    <h2>DEADLINE #6</h2>
+                                    <div class="info_tag">
+                                        <div class="round" id="round_travail"></div>
+                                        <h3># Travail</h3>
+                                    </div>
+                                    <h3>Rendre la version 6 du powerpoint pour le call de Régis</h3>
+                                </div>
+                        </div>
+                      </div>
+    </div>
+    <div class="lightbox" id="exemple3">
+        <div class="page_target">
+          <a href="#" class="closemsg"></a>
+          <div class="mep_page">
+              <div>
+                    <h2>MEETING</h2>
+                    <div class="info_tag">
+                        <div class="round" id="round_travail"></div>
+                        <h3># Travail</h3>
+                    </div>
+                    <h3>Sujet : peut-on toujours faire les meeting au BuffaloGrill alors que Sandrine est Vegan ?</h3>
+                </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="exemple4">
+        <div class="page_target">
+          <a href="#" class="closemsg"></a>
+          <div class="mep_page">
+              <div>
+                    <h2>Fleuriste</h2>
+                    <div class="info_tag">
+                        <div class="round" id="round_famille"></div>
+                        <h3># Famille</h3>
+                    </div>
+                    <h3>Passer chez le fleuriste pour acheter un bouquet à Mamie</h3>
+                </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="exemple5">
+        <div class="page_target">
+          <a href="#" class="closemsg"></a>
+          <div class="mep_page">
+              <div>
+                    <h2>Anniversaire Mamie</h2>
+                    <div class="info_tag">
+                        <div class="round" id="round_famille"></div>
+                        <h3># Famille</h3>
+                    </div>
+                    <h3>Manger avec mamie pour son 70ième anniversaire. Ne pas oublier les bougies et les petits-fours. Ramener son dessert préféré !</h3>
+                </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="exemple6">
+        <div class="page_target">
+          <a href="#" class="closemsg"></a>
+          <div class="mep_page">
+              <div>
+                    <h2>Soirée contrée-pétanque</h2>
+                    <div class="info_tag">
+                        <div class="round" id="round_patrie"></div>
+                        <h3># Patrie</h3>
+                    </div>
+                    <h3>Pétanque et Ricard pour commencer et jeux de carte/wisky pour la fin ! Penser à se faire ramener par Roger.</h3>
+                </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p> Johan Bouguermouh : projet d'étude 7_Agenda + Formulaire</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/navicon.png"/>
+    <link rel="stylesheet" href="formulaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Nouvelle activité</title>
+</head>
+<body>
+    <header>
+        <span><h1> Nouvelle activité</h1></span>
+        <a href="agenda.html"><img id="logo_header" src="img/logo_calendar.svg" alt="Retour sur la page principal"></a>
+    </header>
+    <main>
+        <section>
+            <header id="head_formulaire">
+                <img id="logo_formulaire" src="img/logo_grey.svg" alt="Vous avez ouvert un nouveau formulaire pour ajouté une activité">
+                <a href="agenda.html" id="close_formulaire"><i class="fas fa-times-circle"></i></a>
+            </header>
+                <form methode="get" id="form_1">
+                    <div id="name_date">
+                            <div class="pos_form" id="form_name">
+                                <label id="label_name"for="name">Nom de l'activité</label>
+                                <input type="text" autocapitalize=sentences required>
+                            </div>
+                        <div id="pos_date">
+                            <div class="pos_form">
+                                <label for="start">Date de l'activité</label>
+                                <input id="form_date"type="date" name="trip-start" value="2021-10-15" min="2021-01-01" max="2030-12-31">
+                            </div>
+                            <div class="pos_form">
+                                <label for="appt"> & Heure</label>
+                                <input id="form_heure" type="time" name="appt" min="00:00" max="24:00" required>
+                            </div>
+                        </div>
+                        <div id="c_navtag">
+                            <i class="fas fa-tag" id="picto_nav"></i>
+                            <nav id="nav_tag">
+                                <li id="nav_default"><a href="#"><span>Ajouter</span></a>
+                                    <ul>
+                                        <li class="nav" id="tag_travail"><a href=""><i class="fas fa-tag"></i>#Travail</a></li>
+                                        <li class="nav" id="tag_famille"><a href=""><i class="fas fa-tag"></i>#Famille</a></li>
+                                        <li class="nav" id="tag_patrie"><a href=""><i class="fas fa-tag"></i>#Patrie</a></li>
+                                    </ul>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="pos_form" id="form_descriptif">
+                        <label id="label_descriptif" for="name">Descriptif de la nouvelle activité :</label>
+                        <textarea id="area_descriptif" placeholder="Préciser votre activité avenir..." cols="30" rows="5" required></textarea>
+                    </div>
+                    <footer id="footer_formulaire">
+                        <div id="notif">
+                            <input type="checkbox" id="toggle">
+                            <label id="checkbox" for="toggle"></label>
+                            <label>Activé/Désactivé les notification</label>
+                        </div>
+                        <a href="agenda.html"><i class="fas fa-calendar-plus"></i><span id="add_buton">Ajouter</span></a>
+                     </div>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <p> Johan Bouguermouh : projet d'étude 7_Agenda + Formulaire</p>
+    </footer>
+</body>
+</html>
